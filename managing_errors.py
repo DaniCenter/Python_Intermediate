@@ -4,11 +4,10 @@ def divisors(num):
 
 
 def run():
-    try:
-        num = int(input("Numero ingresado: "))
-        print(divisors(num))
-    except:
-        print("ERROR: Invalid number")
+    num = (input("Numero ingresado: "))
+    # assert num.isnumeric(), "El valor ingresado no es un numero"
+    assert int(num) > 0, "El valor debe ser positivo"
+    print(divisors(int(num)))
 
 
 if (__name__ == "__main__"):
