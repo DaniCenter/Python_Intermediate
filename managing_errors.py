@@ -4,9 +4,13 @@ def divisors(num):
 
 
 def run():
-    num = int(input("Numero ingresado: "))
-    print(divisors(num))
+    try:
+        num = int(input("Numero ingresado: "))
+        print(divisors(num))
+    except:
+        print("ERROR: Invalid number")
 
 
 if (__name__ == "__main__"):
     run()
+    print("Hello, world!")
